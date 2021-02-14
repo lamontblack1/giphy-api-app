@@ -1,4 +1,4 @@
-
+// giphy key: dSe8JxZC5c32HRcUeWDIT7n5R8PYUmTF
 let topics = ["parrot", "toucan", "parakeet", "lovebird", "blue-and-yellow macaw", "scarlet macaw", "rainbow lorikeet", "oropendula"]
 
 window.onload = function() {
