@@ -1,5 +1,5 @@
 // giphy key: dSe8JxZC5c32HRcUeWDIT7n5R8PYUmTF
-let topics = ["parrot", "toucan", "parakeet", "lovebird", "blue-and-yellow macaw", "scarlet macaw", "rainbow lorikeet", "african gray"]
+let topics = ["parrot", "toucan", "parakeet", "lovebird", "macaw", "scarlet macaw", "rainbow lorikeet", "african gray"]
 // placeholder to add more gifs later
 let placeholder = 10
 let gblTopic = ""   // to hold global topic to add more gifs later
@@ -95,7 +95,7 @@ function populateGifContainer(strTopic) {
             if (addAddButton === true) {
                 let newButton = $("<button>")
                 newButton.attr("type", "button")
-                newButton.attr("class", "btn btn-info m-2")
+                newButton.attr("class", "btn btn-lg btn-info my-4")
                 newButton.attr("id", "add-10-more")
                 newButton.text("Add 10 More!")
                 $("#add-more").append(newButton)
