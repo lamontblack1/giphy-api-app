@@ -23,9 +23,11 @@ $(document).on("click",".topic-button", function(event) {
     populateGifContainer(gblTopic)
 });
 
-// when static thumbnail is pushed, animate gif
+// when static thumbnail is pushed, animate gif, and vice versa. store next url in id
 $(document).on("click",".card-img-top", function(event) {
+    let urlHolder = this.src
     this.src = this.id
+    this.id = urlHolder
 });
 
 $(document).on("click","#add-10-more", function(event) {
@@ -77,7 +79,13 @@ function populateGifContainer(strTopic) {
             // let newGif = $("<img src='https://media.giphy.com/media/"+ element.id +"/giphy.gif'>")
             // myDiv.text("Rating: " + element.rating)
             // myDiv.html("<img src='https://media.giphy.com/media/"+ element.id +"/giphy.gif' class='card-img-top'><br><p class='text-center'>Rating :" + element.rating + "</p>")
-            
+                // trying to figure out how to line up gifs in rows
+                // if (((i+1) % 3 === 0) && (i !== 0)) {
+                //     let objBreak = $("<hr>")
+                //     gifDiv.append(objBreak);  //doesn't work
+                //     alert("hello")
+                // }
+
             let cardDiv = $("<div class='card m-1' style='width: 16rem;'>")
             let imageUrl = element.images.downsized_still.url    //static image
             let gifUrl = element.images.downsized_medium.url     // add gif url as id to animate it later
