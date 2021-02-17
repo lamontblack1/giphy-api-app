@@ -33,3 +33,9 @@ img {
 span {
     text-align: center;
 }
+
+#add-10-more, .add-more-gifs {
+    margin-left: 400px;
+  /* -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
