@@ -6,3 +6,30 @@ h1 {
 body {
     background-color: #82cac8;
 }
+
+.container {
+    width: 1600px;
+}
+
+/* .single-gif {
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+
+img {
+    width: 100%;
+} */
+
+img {
+    animation-play-state: paused;
+}
+.card {
+    float: left;
+}
+.card {
+    background-color: transparent;
+}
+span {
+    text-align: center;
+}
