@@ -18,12 +18,20 @@ body {
 }
 
 .card {
-    float: left;
+    /* float: left; */
     background-color: transparent;
     display: inline-block;
+    /* clear: right; */
 }
 
-#add-10-more {
+#add-10-more, .like {
     position: relative;
     left: 41%;
 }
+
+/* #gifContainer {
+    display: inline-block ;
+} */
+/* p {
+    line-height: 2rem;
+} */
